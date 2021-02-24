@@ -7,8 +7,8 @@
   - name: Include the variables from the YAML filr
     include_vars: vars/variables.yml
 
-  - name: Include the enviornment file and set the variables
-    include_vars: tasks/enviornment.yml
+  - name: Include the environment file and set the variables
+    include_vars: tasks/environment.yml
     vars:
       package: httpd
       service: httpd
