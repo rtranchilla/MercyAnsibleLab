@@ -26,11 +26,11 @@
       enabled: true
 
   - name: Open the port for {{ rule }}
-      firewalld:
-        service: "{{ rule }}"
-        permanent: true
-        immediate: true
-        state: enabled
+    firewalld:
+      service: "{{ rule }}"
+      permanent: true
+      immediate: true
+      state: enabled
 
   - name: Create index.html file for hosting static content
     copy:
