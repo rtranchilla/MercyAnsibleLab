@@ -1,7 +1,7 @@
 ---
 - hosts: labservers
   become: yes
-  var:
+  vars:
     rule: http
   tasks:
   - name: Include the variables from the YAML filr
