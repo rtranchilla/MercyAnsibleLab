@@ -1,3 +1,4 @@
+---
 - hosts: labservers
   become: yes
   var:
