@@ -14,9 +14,9 @@
   yum:
     name: "{{ item }}"
     state: latest
-  witn_items:
+  with_items:
     - "{{ httpd_pkg }}"
-    
+
 - name: Start httpd service
   service:
     name: "{{ httpd_srv }}"
