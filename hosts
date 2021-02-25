@@ -1,0 +1,6 @@
+[labservers]
+ansiblelab3
+
+[labservers:vars]
+ansible_user = rtranch
+ansible_ssh_private_key_file = /home/rtranch/.ssh/id_rsa
