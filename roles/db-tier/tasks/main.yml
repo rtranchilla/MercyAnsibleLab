@@ -16,7 +16,7 @@
 - name: Start firewalld
   service:
     name: firewalld
-    enabled: trie
+    enabled: true
     state: started
 
 - name: open mysql port
