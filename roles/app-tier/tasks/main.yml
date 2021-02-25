@@ -34,12 +34,12 @@
     path: /var/www/vhost/index.php
     state: directory
 
-- name: Copy index.j2 filr
-  template:
-    src: index.j2
-    dest: /var/www/vhost/index.php
-    mode: 0644
-    owner: apache
+#- name: Copy index.j2 file
+#  template:
+#    src: index.j2
+#    dest: /var/www/vhost/index.php
+#    mode: 0644
+#    owner: apache
 
 - name: Open httpd port
   firewalld:
