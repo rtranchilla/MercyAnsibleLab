@@ -44,9 +44,9 @@
 - name: Open httpd port
   firewalld:
     service: http
-      state: enabled
-      immediate: true
-      permanent: true
+    state: enabled
+    immediate: true
+    permanent: true
 
 - name: enable selinux boolean
   seboolean:
