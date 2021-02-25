@@ -36,6 +36,12 @@
 - name: Setting up mariadb password
   mysql_user:
     name: "{{ db['user'] }}"
+    password: "{{ db['password'] }}"
+  when: root_pwd_check.rc == 0
+
+- name: DB users have privileges on all database
+  mysql_user:
+    name: "{{ db['user'] }}"
     priv: "*.*:All"
     append_privs: yes
     password: "{{ db['password'] }}"
