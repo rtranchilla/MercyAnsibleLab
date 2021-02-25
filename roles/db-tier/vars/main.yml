@@ -7,7 +7,7 @@ db_pkg:
   - firewalld
 db_srv: mariadb
 db:
-  user: root
+  user: rtranch
   database: userdb
-  password: redhat
+  password: rtranch
   backupfilr: userdb.backup
