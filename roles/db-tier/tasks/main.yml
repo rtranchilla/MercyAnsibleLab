@@ -33,17 +33,17 @@
   failed_when: false
   register: root_pwd_check
 
-- name: Setting up mariadb password
-  mysql_user:
-    name: "{{ db['user'] }}"
-    priv: "*.*:All"
-    append_privs: yes
-    password: "{{ db['password'] }}"
-    login_password: "{{ db['password'] }}"
-    host: "{{ item }}"
-  loop:
-   - "{{ inventory_hostname }}"
-   - '%'
+#- name: Setting up mariadb password
+#  mysql_user:
+#    name: "{{ db['user'] }}"
+#    priv: "*.*:All"
+#    append_privs: yes
+#    password: "{{ db['password'] }}"
+#    login_password: "{{ db['password'] }}"
+#    host: "{{ item }}"
+#  loop:
+#   - "{{ inventory_hostname }}"
+#   - '%'
 
 - name: copy database dump file
   copy:
