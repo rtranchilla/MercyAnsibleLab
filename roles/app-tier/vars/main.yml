@@ -4,7 +4,7 @@ db:
   user: root
   database: userdb
   password: redhat
-http_pkg:
+httpd_pkg:
  - httpd
  - php
  - php-mysql
