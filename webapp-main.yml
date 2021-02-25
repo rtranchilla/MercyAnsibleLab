@@ -6,4 +6,4 @@
 - hosts: labservers
   become: yes
   roles:
-   - adb-tier
+   - db-tier
