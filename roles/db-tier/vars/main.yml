@@ -10,4 +10,4 @@ db:
   user: root
   database: userdb
   password: redhat
-  backupfilr: userdb.backup
+  backupfile: userdb.backup
